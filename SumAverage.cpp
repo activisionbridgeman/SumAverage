@@ -1,7 +1,20 @@
 // SumAverage.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Take 3 numbers and return the sum and average of them
 //
 
 #include <iostream>
+
+// Return sum of 3 numbers
+float sum (float i, float j, float k)
+{
+    return i + j + k;
+}
+
+// Return average of 3 numbers
+float average (float i, float j, float k)
+{
+    return sum(i, j, k) / 3;
+}
 
 int main()
 {
@@ -13,9 +26,8 @@ int main()
     std::cin >> j;
     std::cout << "Enter third number: ";
     std::cin >> k;
-    float sum = i + j + k;
-    std::cout << "Sum is: " << sum << '\n';
-    std::cout << "Average is: " << sum / 3 << '\n';
+    std::cout << "Sum is: " << sum(i, j, k) << '\n';
+    std::cout << "Average is: " << average(i, j, k) << '\n';
 
 }
 
